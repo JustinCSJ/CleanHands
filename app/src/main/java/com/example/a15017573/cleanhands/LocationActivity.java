@@ -26,6 +26,8 @@ public class LocationActivity extends AppCompatActivity {
         aa = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, al);
         lvLocations.setAdapter(aa);
 
+        al.add(0, "test");
+
         lvLocations.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
