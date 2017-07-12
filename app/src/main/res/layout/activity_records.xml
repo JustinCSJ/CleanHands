@@ -1,314 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.a15017573.cleanhands.RecordsActivity">
-
-    <TextView
-        android:id="@+id/tvSelect"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Select:" />
-
-    <ListView
-        android:id="@+id/lvRole"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp" />
-
-    <ListView
-        android:id="@+id/lvRank"
-        android:layout_width="match_parent"
-        android:layout_height="60dp" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="30dp" />
-
-
-    <TextView
-        android:id="@+id/tvObservationPoint"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Observation Point" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp" />
+    tools:context="com.example.a15017573.cleanhands.RecordsActivity"
+    android:weightSum="1">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frame1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
 
         <TextView
-            android:id="@+id/tvBeforeTouching"
-            android:layout_width="57dp"
-            android:layout_height="match_parent"
-            android:text="Before Touching" />
-
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rbWash"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.14"
-                android:text="Wash" />
-
-            <RadioButton
-                android:id="@+id/rbTouch"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.34"
-                android:text="Touch" />
-
-            <RadioButton
-                android:id="@+id/rbNo"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.27"
-                android:text="No" />
-
-        </RadioGroup>
-
-        <Button
-            android:id="@+id/btnNote"
-            android:layout_width="38dp"
+            android:id="@+id/tvRole"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/actionModePasteDrawable" />
+            android:text="Role"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
-        <Button
-            android:id="@+id/btnCons"
-            android:layout_width="73dp"
-            android:layout_height="37dp"
-            android:text="Cons" />
-    </LinearLayout>
+        <ListView
+            android:id="@+id/lvRole"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
         <TextView
-            android:id="@+id/tvAfterTouching"
-            android:layout_width="57dp"
-            android:layout_height="match_parent"
-            android:text="After Touching" />
-
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rbWash2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.14"
-                android:text="Wash" />
-
-            <RadioButton
-                android:id="@+id/rbTouch2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.34"
-                android:text="Touch" />
-
-            <RadioButton
-                android:id="@+id/rbNo2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.27"
-                android:text="No" />
-
-        </RadioGroup>
-
-        <Button
-            android:id="@+id/btnNote2"
-            android:layout_width="38dp"
+            android:id="@+id/tvRank"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/actionModePasteDrawable" />
+            android:text="Rank"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
-        <Button
-            android:id="@+id/btnCons2"
-            android:layout_width="73dp"
-            android:layout_height="37dp"
-            android:text="Cons" />
+        <ListView
+            android:id="@+id/lvRank"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/tvMoments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Moments"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <ListView
+            android:id="@+id/lvMoments"
+            android:layout_width="match_parent"
+            android:layout_height="313dp" />
+
+
     </LinearLayout>
 
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tvBeforeExposure"
-            android:layout_width="57dp"
-            android:layout_height="match_parent"
-            android:text="Before Exposure"
-            android:layout_weight="0.19" />
-
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rbWash3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.14"
-                android:text="Wash" />
-
-            <RadioButton
-                android:id="@+id/rbTouch3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.34"
-                android:text="Touch" />
-
-            <RadioButton
-                android:id="@+id/rbNo3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.27"
-                android:text="No" />
-
-        </RadioGroup>
-
-        <Button
-            android:id="@+id/btnNote3"
-            android:layout_width="38dp"
-            android:layout_height="wrap_content"
-            android:background="?android:attr/actionModePasteDrawable" />
-
-        <Button
-            android:id="@+id/btnCons3"
-            android:layout_width="73dp"
-            android:layout_height="37dp"
-            android:text="Cons" />
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tvAfterExposure"
-            android:layout_width="57dp"
-            android:layout_height="match_parent"
-            android:text="After Exposure"
-            android:layout_weight="0.72" />
-
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rbWash4"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.14"
-                android:text="Wash" />
-
-            <RadioButton
-                android:id="@+id/rbTouch4"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.34"
-                android:text="Touch" />
-
-            <RadioButton
-                android:id="@+id/rbNo4"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.27"
-                android:text="No" />
-
-        </RadioGroup>
-
-        <Button
-            android:id="@+id/btnNote4"
-            android:layout_width="38dp"
-            android:layout_height="wrap_content"
-            android:background="?android:attr/actionModePasteDrawable" />
-
-        <Button
-            android:id="@+id/btnCons4"
-            android:layout_width="73dp"
-            android:layout_height="37dp"
-            android:text="Cons" />
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tvAfterEnvironment"
-            android:layout_width="57dp"
-            android:layout_height="match_parent"
-            android:text="After Environment"
-            android:layout_weight="2.88" />
-
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rbWash5"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.14"
-                android:text="Wash" />
-
-            <RadioButton
-                android:id="@+id/rbTouch5"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.34"
-                android:text="Touch" />
-
-            <RadioButton
-                android:id="@+id/rbNo5"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.27"
-                android:text="No" />
-
-        </RadioGroup>
-
-        <Button
-            android:id="@+id/btnNote5"
-            android:layout_width="38dp"
-            android:layout_height="wrap_content"
-            android:background="?android:attr/actionModePasteDrawable" />
-
-        <Button
-            android:id="@+id/btnCons5"
-            android:layout_width="73dp"
-            android:layout_height="37dp"
-            android:text="Cons" />
-    </LinearLayout>
-
-</LinearLayout>
+</ScrollView>

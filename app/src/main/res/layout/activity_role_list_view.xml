@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.a15017573.cleanhands.LocationActivity">
+    tools:context="com.example.a15017573.cleanhands.RoleListView">
 
     <ListView
-        android:id="@+id/lvLocations"
+        android:id="@+id/lvRole"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

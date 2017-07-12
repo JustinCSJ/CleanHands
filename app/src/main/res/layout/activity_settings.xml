@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.a15017573.cleanhands.RoleSpinnerActivity">
+    tools:context="com.example.a15017573.cleanhands.SettingsActivity">
 
-    <Spinner
-        android:id="@+id/spnRole"
-        android:layout_width="match_parent"
+    <Switch
+        android:id="@+id/switchNote"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:entries="@array/roles"
-        android:layout_weight="1" />
+        android:layout_weight="0.24"
+        android:text="Enable Notes" />
 </LinearLayout>
